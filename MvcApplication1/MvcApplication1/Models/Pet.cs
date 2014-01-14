@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace MvcApplication1.Models
 {
     using System;
@@ -20,6 +22,7 @@ namespace MvcApplication1.Models
         }
     
         public int PetID { get; set; }
+        [Display(Name = "Ãû×Ö")]
         public string PetName { get; set; }
         public Nullable<int> PetAgeYears { get; set; }
         public Nullable<int> PetAgeMonths { get; set; }
