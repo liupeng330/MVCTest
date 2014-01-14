@@ -166,6 +166,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PetController.cs" />
+    <Compile Include="Controllers\PetPhotoController.cs" />
+    <Compile Include="Controllers\StatusController.cs" />
+    <Compile Include="Controllers\UserProfileController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -349,6 +352,26 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Pet\PictureUpload.cshtml" />
+    <Content Include="Views\PetPhoto\Index.cshtml" />
+    <Content Include="Views\PetPhoto\Details.cshtml" />
+    <Content Include="Views\PetPhoto\Create.cshtml" />
+    <Content Include="Views\PetPhoto\Edit.cshtml" />
+    <Content Include="Views\PetPhoto\Delete.cshtml" />
+    <Content Include="Views\Pet\Index.cshtml" />
+    <Content Include="Views\Pet\Details.cshtml" />
+    <Content Include="Views\Pet\Create.cshtml" />
+    <Content Include="Views\Pet\Edit.cshtml" />
+    <Content Include="Views\Pet\Delete.cshtml" />
+    <Content Include="Views\Status\Index.cshtml" />
+    <Content Include="Views\Status\Details.cshtml" />
+    <Content Include="Views\Status\Create.cshtml" />
+    <Content Include="Views\Status\Edit.cshtml" />
+    <Content Include="Views\Status\Delete.cshtml" />
+    <Content Include="Views\UserProfile\Index.cshtml" />
+    <Content Include="Views\UserProfile\Details.cshtml" />
+    <Content Include="Views\UserProfile\Create.cshtml" />
+    <Content Include="Views\UserProfile\Edit.cshtml" />
+    <Content Include="Views\UserProfile\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

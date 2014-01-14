@@ -1,0 +1,75 @@
+﻿@model MvcApplication1.Models.Pet
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Pet</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PetName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PetName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PetAgeYears)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PetAgeYears)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PetAgeMonths)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PetAgeMonths)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastSeenOn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastSeenOn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastSeenWhere)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastSeenWhere)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserProfile.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserProfile.UserName)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

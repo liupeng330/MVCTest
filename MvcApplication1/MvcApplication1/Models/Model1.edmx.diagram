@@ -4,22 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="07a89ddb45024b0f83b43c80bdbca908" Name="Diagram1">
-        <EntityTypeShape EntityType="MvcApplication.Model.Message" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.Pet" Width="1.5" PointX="8.25" PointY="2.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.PetPhoto" Width="1.5" PointX="10.5" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.PetType" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.Setting" Width="1.5" PointX="2.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.Status" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.UserProfile" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.webpages_Membership" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.webpages_OAuthMembership" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MvcApplication.Model.webpages_Roles" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="MvcApplication.Model.FK_Message_User" ManuallyRouted="false" />
-        <AssociationConnector Association="MvcApplication.Model.FK_Pet_Status" ManuallyRouted="false" />
-        <AssociationConnector Association="MvcApplication.Model.FK_Pet_User" ManuallyRouted="false" />
-        <AssociationConnector Association="MvcApplication.Model.FK_PetPhoto_Pet" ManuallyRouted="false" />
-        <AssociationConnector Association="MvcApplication.Model.webpages_UsersInRoles" ManuallyRouted="false" />
+      <Diagram DiagramId="561f7aec4ba14364b9f3e48bbff2b99d" Name="Diagram1">
+        <EntityTypeShape EntityType="Mvc.Model.Message" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.Pet" Width="1.5" PointX="8.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.PetPhoto" Width="1.5" PointX="10.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.PetType" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.Setting" Width="1.5" PointX="2.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.Status" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.UserProfile" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.webpages_Membership" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.webpages_OAuthMembership" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Mvc.Model.webpages_Roles" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Mvc.Model.FK_Message_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Mvc.Model.FK_Pet_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="Mvc.Model.FK_Pet_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Mvc.Model.FK_PetPhoto_Pet" ManuallyRouted="false" />
+        <AssociationConnector Association="Mvc.Model.webpages_UsersInRoles" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

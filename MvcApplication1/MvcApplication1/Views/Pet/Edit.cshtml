@@ -1,0 +1,94 @@
+﻿@model MvcApplication1.Models.Pet
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Pet</legend>
+
+        @Html.HiddenFor(model => model.PetID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PetName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PetName)
+            @Html.ValidationMessageFor(model => model.PetName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PetAgeYears)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PetAgeYears)
+            @Html.ValidationMessageFor(model => model.PetAgeYears)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PetAgeMonths)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PetAgeMonths)
+            @Html.ValidationMessageFor(model => model.PetAgeMonths)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StatusID, "Status")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("StatusID", String.Empty)
+            @Html.ValidationMessageFor(model => model.StatusID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastSeenOn)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastSeenOn)
+            @Html.ValidationMessageFor(model => model.LastSeenOn)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastSeenWhere)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastSeenWhere)
+            @Html.ValidationMessageFor(model => model.LastSeenWhere)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Notes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Notes)
+            @Html.ValidationMessageFor(model => model.Notes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserId, "UserProfile")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UserId", String.Empty)
+            @Html.ValidationMessageFor(model => model.UserId)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

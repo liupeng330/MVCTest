@@ -1,0 +1,43 @@
+﻿@model MvcApplication1.Models.PetPhoto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>PetPhoto</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PhotoID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PhotoID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pet.PetName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pet.PetName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Photo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Photo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,71 @@
+﻿@model MvcApplication1.Models.Pet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Pet</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PetName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PetName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PetAgeYears)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PetAgeYears)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PetAgeMonths)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PetAgeMonths)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastSeenOn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastSeenOn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastSeenWhere)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastSeenWhere)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Notes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Notes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserProfile.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserProfile.UserName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.PetID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
